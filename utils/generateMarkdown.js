@@ -3,13 +3,13 @@
 const noLicense = "";
 
 function renderLicenseBadge(license) {
-  if(License === "MIT") {
+  if(license === "MIT") {
     return `![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
-  } else if (License === "MOZILLA") {
+  } else if (license === "MOZILLA") {
     return `![MOZILLA: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`;
-  } else if (License === "IBM") {
+  } else if (license === "IBM") {
     return `![IBM: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)`;
-  } else if (License === "APACHE") {
+  } else if (license === "APACHE") {
     return `![APACHE](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
   } else {
     return noLicense;
@@ -19,13 +19,13 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(License === "MIT") {
+  if(license === "MIT") {
     return `(https://opensource.org/licenses/MIT)`;
-  } else if (License === "MOZILLA") {
+  } else if (license === "MOZILLA") {
     return `(https://opensource.org/licenses/MPL-2.0)`;
-  } else if (License === "IBM") {
+  } else if (license === "IBM") {
     return `(https://opensource.org/licenses/IPL-1.0)`;
-  } else if (License === "APACHE") {
+  } else if (license === "APACHE") {
     return `(https://opensource.org/licenses/Apache-2.0)`;
   } else {
     return noLicense;
@@ -35,13 +35,13 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if(License === "MIT") {
+  if(license === "MIT") {
     return `[License: MIT]`;
-  } else if (License === "MOZILLA") {
+  } else if (license === "MOZILLA") {
     return `[License: MPL 2.0]`;
-  } else if (License === "IBM") {
+  } else if (license === "IBM") {
     return `[License: IPL 1.0]`;
-  } else if (License === "APACHE") {
+  } else if (license === "APACHE") {
     return `[License: APACHE]`;
   } else {
     return noLicense;
