@@ -50,11 +50,12 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log("Creating README...")
+  console.log("Creating README...");
+  // console.log(data.installation);
   return `# ${renderLicenseBadge(data.license)}
 
 # Description
-${data.Description}
+${data.description}
 
 # Table of Contents
 * [Installation](#installation)
@@ -71,30 +72,30 @@ ${data.Description}
 
 # Installation
 
-Dependancies have to be installed in order to run the application: ${data.Installation}
+Dependancies have to be installed in order to run the application: ${data.installation}
 
 # Usage
 
-Uses for this application: ${data.Usage}
+Uses for this application: ${data.usage}
 
 # Credit
 
-Involved parties: ${data.Credit}
+Involved parties: ${data.credit}
 
 # Tests
 
-In order to run tests on this application, the following command needs to be run: ${data.Test}
+In order to run tests on this application, the following command needs to be run: ${data.test}
 
 # License
 
 This project is licensed under: 
-${renderLicenseSection(data.License)}
-${renderLicenseLink(data.License)}
+${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)}
 
 
 # Questions
 
-For any questions about the application, reach out to: ${data.GitHubUser} or: ${data.Email}.
+For any questions about the application, reach out to: ${data.username} or: ${data.email}.
 
 `;
 }

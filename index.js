@@ -30,23 +30,28 @@ inquirer
         },
         {
             type: 'input',
-            name: 'credits',
+            name: 'credit',
             message: 'Who should be credited in this repo?',
         },
         {
             type: 'input',
-            name: 'questions',
+            name: 'test',
+            message: 'Enter test instructions',
+        },
+        {
+            type: 'input',
+            name: 'username',
             message: 'Enter GitHub username: ',
         },
         {
             type: 'input',
-            name: 'questions',
+            name: 'email',
             message: 'Enter email address: ',
         },
         {
             type: 'list',
-            message: 'Select License:',
             name: 'license',
+            message: 'Select License:',
             choices: ['MIT', 'MOZILLA', 'IBM', 'APACHE'],
         },
 
